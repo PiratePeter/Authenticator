@@ -1,0 +1,97 @@
+/* universal */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* by id */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100pt;
+    background-image: url('./images/banner.png');
+    background-size: 100%;
+    border-bottom: thin solid #cccccc;
+}
+
+#logo {
+    margin: auto;
+    vertical-align: middle;
+    height: 60pt;
+}
+
+/* by class */
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #fbfbfb;
+    border-radius: 3pt;
+    width: 1050pt;
+}
+
+.titlebar {
+    height: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    width: fit-content;
+    height: fit-content;
+    margin: 15pt;
+    padding: 3pt;
+    border-radius: 3pt;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+
+/* by tag */
+
+body {
+    background-color: #fbfbfb;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p,
+label,
+fieldset,
+figure,
+h5 {
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 30pt;
+}
