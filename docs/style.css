@@ -38,7 +38,8 @@
 .content {
     background-color: #fbfbfb;
     border-radius: 3pt;
-    width: 1050pt;
+    width: 500pt;
+    align-items: center;
 }
 
 .titlebar {
@@ -56,6 +57,42 @@
     border-radius: 3pt;
     background-color: #f0f0f0;
     align-items: center;
+}
+
+.input {
+    font-size: medium;
+    border: thin solid #cccccc;
+    border-radius: 3pt;
+    background-color: #f7f7f7;
+    margin: 0.4em;
+    padding: 0.4em 0.3em;
+}
+
+.inputbar {
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 5pt;
+    padding: 5pt 10pt;
+    border-radius: 3pt;
+    background-color: #f7f7f7;
+    border: thin solid #cccccc;
+    cursor: pointer;
+    color: #666666;
+    width: fit-content;
+    height: fit-content;
+    font-size: medium;
+}
+
+.button:hover {
+    background-color: #d7d7d7;
+    border: thin solid #999999;
+    color: #333333;
 }
 
 /* by tag */
@@ -94,4 +131,20 @@ h5 {
 
 h1 {
     font-size: 30pt;
+}
+
+input,
+select {
+    border: thin solid #cccccc;
+    border-radius: 3pt;
+    background-color: #f7f7f7;
+    margin: 0.4em;
+    padding: 0.4em 0.3em;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }

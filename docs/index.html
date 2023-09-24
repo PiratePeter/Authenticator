@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
+    <script defer src="otpauth.js"></script>
+    <script defer src="script.js"></script>
     <title>Authenticator</title>
     </style>
 </head>
@@ -16,7 +17,7 @@
         <a href="https://github.com/PiratePeter">
             <h1>
                 <img id="logo" src="favicon.ico">
-                Alexander Peter
+                PiratePeter
             </h1>
         </a>
     </header>
@@ -26,7 +27,30 @@
                 <h2>Authenticator</h2>
             </header>
             <div class="content">
-                Content
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>Secret:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="secret" name="secret" placeholder="ABCDEFGHIJKLMNOP" required
+                                    value="" onchange="setParams()" class="input">
+                            </td>
+                            <!-- TODO: Add button to save secret to cookie -->
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Token:</label>
+                            </td>
+                            <td>
+                                <p id="token"></p>
+                            </td>
+                            <!-- TODO: Add timer showing the validity -->
+                            <!-- TODO: Add button to save secret to cookie -->
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
